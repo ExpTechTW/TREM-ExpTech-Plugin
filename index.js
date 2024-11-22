@@ -1,4 +1,4 @@
-const config = require("./src/config");
+const config = require("./src/utils/config");
 
 class Plugin {
   static instance = null;
@@ -34,9 +34,6 @@ class Plugin {
 
     const { CustomLogger } = require("./src/utils/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
-
-    const server = require("./src/server");
-    new server(this.config.server);
   }
 }
 
