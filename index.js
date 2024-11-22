@@ -33,7 +33,7 @@ class Plugin {
     this.config = this.#config.getConfig();
 
     const { CustomLogger } = require("./src/utils/logger").createCustomLogger(Logger);
-    this.logger = new CustomLogger("websocket");
+    this.logger = new CustomLogger("exptech");
 
     const server = require("./src/server");
     new server(this.config.server);
