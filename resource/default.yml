@@ -1,0 +1,6 @@
+ver: 1
+
+user:
+  token: null
+  name: null # 若使用 token 則不需要填寫
+  pass: null # 若使用 token 則不需要填寫
