@@ -7,7 +7,7 @@ class ExpTech {
     if (ExpTech.#instance)
       return ExpTech.#instance;
     this.config = config;
-    this._login();
+    this.#login();
     ExpTech.#instance = this;
   }
 
@@ -17,7 +17,7 @@ class ExpTech {
     return ExpTech.#instance;
   }
 
-  async _login() {
+  async #login() {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 3000);
 

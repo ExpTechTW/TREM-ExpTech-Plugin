@@ -31,8 +31,7 @@ class Plugin {
 
     this.config = this.#config.getConfig();
 
-    const { CustomLogger } =
-      require("./src/utils/logger").createCustomLogger(Logger);
+    const { CustomLogger } = require("./src/utils/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
 
     console.log(this.config);
