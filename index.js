@@ -7,7 +7,6 @@ class Plugin {
 
   #ctx;
   #config;
-  #logger;
 
   constructor(ctx) {
     if (Plugin.instance) return Plugin.instance;
