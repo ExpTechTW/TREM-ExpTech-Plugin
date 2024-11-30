@@ -36,6 +36,10 @@ class Plugin {
     console.log(this.config);
 
     const exptech = new ExpTech(this.config);
+
+    const key = exptech.getKey();
+
+    console.log(key);
   }
 }
 

@@ -7,6 +7,7 @@ class ExpTech {
     if (ExpTech.#instance)
       return ExpTech.#instance;
     this.config = config;
+    this.key = null;
     this.#login();
     ExpTech.#instance = this;
   }
@@ -42,6 +43,10 @@ class ExpTech {
     } finally {
       clearTimeout(timeout);
     }
+  }
+
+  getKey() {
+    return this.key;
   }
 }
 
