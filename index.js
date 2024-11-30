@@ -1,5 +1,7 @@
 const config = require("./src/utils/config");
 
+const ExpTech = require("./src/exptech");
+
 class Plugin {
   static instance = null;
 
@@ -34,6 +36,8 @@ class Plugin {
     this.logger = new CustomLogger("exptech");
 
     console.log(this.config);
+
+    const exptech = new ExpTech(this.config);
   }
 }
 
