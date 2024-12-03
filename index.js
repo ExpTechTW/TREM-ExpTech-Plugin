@@ -13,6 +13,7 @@ class Plugin {
     if (Plugin.instance) return Plugin.instance;
 
     this.#ctx = ctx;
+    this.name = "exptech";
     this.#config = null;
     this.config = {};
     this.logger = null;
@@ -29,15 +30,19 @@ class Plugin {
   onLoad() {
     const { Logger, info } = this.#ctx;
 
-    const { CustomLogger } = require("./src/utils/logger").createCustomLogger(Logger);
+    const { CustomLogger } =
+      require("./src/utils/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
 
-    const defaultDir = path.join(info.pluginDir, "./exptech/resource/default.yml");
+    const defaultDir = path.join(
+      info.pluginDir,
+      "./exptech/resource/default.yml"
+    );
     const configDir = path.join(info.pluginDir, "./exptech/config.yml");
 
-    this.#config = new config(this.logger, defaultDir, configDir);
+    this.#config = new config(this.name, this.logger, defaultDir, configDir);
 
-    this.config = this.#config.getConfig();
+    this.config = this.#config.getConfig(this.name);
 
     console.log(this.config);
 
