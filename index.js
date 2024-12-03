@@ -32,8 +32,8 @@ class Plugin {
     const { CustomLogger } = require("./src/utils/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
 
-    const defaultDir = path.join(info.pluginDir, "./resource/default.yml");
-    const configDir = path.join(info.pluginDir, "./config.yml");
+    const defaultDir = path.join(info.pluginDir, "./exptech/resource/default.yml");
+    const configDir = path.join(info.pluginDir, "./exptech/config.yml");
 
     this.#config = new config(this.logger, defaultDir, configDir);
 
