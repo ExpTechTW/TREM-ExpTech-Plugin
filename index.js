@@ -1,8 +1,6 @@
 const config = require("../config/config");
 const ExpTech = require("./src/exptech");
 
-const path = require("path");
-
 class Plugin {
   static instance = null;
 
@@ -28,29 +26,20 @@ class Plugin {
   }
 
   onLoad() {
-    const { Logger, info } = this.#ctx;
+    const { Logger, info, utils } = this.#ctx;
 
     const { CustomLogger } =
       require("./src/utils/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
 
-    const defaultDir = path.join(
-      info.pluginDir,
-      "./exptech/resource/default.yml"
-    );
-    const configDir = path.join(info.pluginDir, "./exptech/config.yml");
+    const defaultDir = utils.path.join(info.pluginDir, "./exptech/resource/default.yml");
+    const configDir = utils.path.join(info.pluginDir, "./exptech/config.yml");
 
-    this.#config = new config(this.name, this.logger, defaultDir, configDir);
+    this.#config = new config("exptech", this.logger, utils.fs, defaultDir, configDir);
 
-    this.config = this.#config.getConfig(this.name);
+    const exptech = new ExpTech(this.#config);
 
-    console.log(this.config);
-
-    const exptech = new ExpTech(this.config);
-
-    const key = exptech.getKey();
-
-    console.log(key);
+    exptech.runlogin(exptech);
   }
 }
 
