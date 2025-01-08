@@ -6,7 +6,7 @@
   },
   "author": ["whes1015","yayacat"],
   "dependencies": {
-    "trem": ">=3.1.0-rc.4",
+    "trem": "=3.1.0-rc.4",
     "config": ">=1.0.3"
   },
   "resources": ["AGPL-3.0"],

@@ -1,4 +1,5 @@
 const logger = require("./utils/logger");
+const os = require("node:os");
 
 class ExpTech {
   static #instance = null;
@@ -28,9 +29,9 @@ class ExpTech {
         signal  : controller.signal,
         headers : { "Content-Type": "application/json" },
         body    : JSON.stringify({
-          email : this.getconfig.user.name,
+          email : this.getconfig.user.email,
           pass  : this.getconfig.user.pass,
-          name  : "TREM-lite"
+          name  : `${this.getconfig.user.name}/TREM-lite/3.1.0-rc.4/${os.release()}`
         }),
       });
 
