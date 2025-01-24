@@ -1,0 +1,12 @@
+{
+  "timestamp": 1736324848253,
+  "version": "1.0.1",
+  "fileHashes": {
+    "index.js": "13430d7b53368f2070a5c3c86554329d27620fb056f224e44c97ffe4014c5c98",
+    "info.json": "77432f57d1fe8513257a6499414a13095083841cdda90cc99baf01d2771b7707",
+    "resource/default.yml": "b067eac4798a9b78b655aa0fe30960490215afbc1bbb25028f3a10796cce1137",
+    "src/exptech.js": "53034590154d368f729e332d672e786993e09094a4d317ef702a8eca93170466",
+    "src/utils/logger.js": "3c7867a1d32bb13bcdb8181e77ba2d06c6a8eb9028dc79091f07b7626c53c8d8"
+  },
+  "signature": "NwwKojVqPl9UQpFGtvbmHpV5IR+ZoPRuOKfyj8MT9kWDoV2TOyUveB9QpT7y7BbAWFPnYZ/JeoZH8iy8vJlD6XZJ7oyTgk4TU3WQyR1Xee+AnISquLJMGiL5spnyAtlr+Tpxesia1TmS600bIWIDHHg5MEtIvRwQk2HMp+1SPfDHp0uGS7yRboTSI03PDfOWvwhT+haS5wkT3QIs9uKL4v9Rbq+EXv/0Pjtn56j0QWKD/H/db2RpIwm6sysUDLFZMeUYnni3+aE0xajjtCo4mcJDsu6uNynm7dyZDMEyYgCcyz3FN9IKEVEEJLTvxvLcMw5jq42bayMVaCEdj0IMcQ=="
+}
