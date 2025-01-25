@@ -1,12 +1,12 @@
-const logger = require("./utils/logger");
 const os = require("node:os");
 
 class ExpTech {
   static #instance = null;
 
-  constructor(config) {
+  constructor(logger, config) {
     if (ExpTech.#instance)
       return ExpTech.#instance;
+    this.logger = logger;
     this.config = config;
     this.getconfig = this.config.getConfig();
     this.key = null;
@@ -42,12 +42,12 @@ class ExpTech {
         this.config.writeConfig(this.getconfig);
         console.log(this.key);
       } else
-        logger.error("Login http status code: ", res.status);
+        this.logger.error("Login http status code: ", res.status);
     } catch (error) {
       if (error.name === "AbortError")
-        logger.error("請求超時");
+        this.logger.error("請求超時");
       else
-        logger.error(error.message);
+        this.logger.error(error.message);
     } finally {
       clearTimeout(timeout);
       return null;

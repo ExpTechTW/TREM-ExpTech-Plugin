@@ -37,7 +37,7 @@ class Plugin {
 
     this.#config = new config("exptech", this.logger, utils.fs, defaultDir, configDir);
 
-    const exptech = new ExpTech(this.#config);
+    const exptech = new ExpTech(this.logger, this.#config);
 
     exptech.runlogin(exptech);
   }
