@@ -29,7 +29,7 @@ class Plugin {
     const { Logger, info, utils } = this.#ctx;
 
     const { CustomLogger } =
-      require("./src/utils/logger").createCustomLogger(Logger);
+      require("../logger/logger").createCustomLogger(Logger);
     this.logger = new CustomLogger("exptech");
 
     const defaultDir = utils.path.join(info.pluginDir, "./exptech/resource/default.yml");

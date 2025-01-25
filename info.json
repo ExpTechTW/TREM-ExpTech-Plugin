@@ -1,14 +1,20 @@
 {
   "name": "exptech",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": {
     "zh_tw": "TREM-Lite ExpTech Plugin"
   },
-  "author": ["whes1015","yayacat"],
+  "author": [
+    "whes1015",
+    "yayacat"
+  ],
   "dependencies": {
-    "trem": "=3.1.0-rc.4",
-    "config": ">=1.0.3"
+    "trem": ">=3.1.0",
+    "config": ">=1.0.3",
+    "logger": ">=1.0.0"
   },
-  "resources": ["AGPL-3.0"],
+  "resources": [
+    "AGPL-3.0"
+  ],
   "link": "https://github.com/ExpTechTW/TREM-Example-Plugin"
 }
