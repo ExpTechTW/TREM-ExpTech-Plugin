@@ -1,12 +1,12 @@
 {
-  "timestamp": 1737778184257,
-  "version": "1.0.4",
+  "timestamp": 1738394211888,
+  "version": "1.0.5",
   "fileHashes": {
     "index.js": "8dcb4d59efe775e1d1b2e29fd28a195a872584a8e7f8f986e347f31ff068714d",
-    "info.json": "f34e277d41e17b8a6a67c3cf6fa233a025e1059b2a8f5f115879aa0a9314f951",
+    "info.json": "3455e0f3acf75ef5721ea9eb8ff9e7454a9327b5e1140608398b515bcda4e373",
     "resource/default.yml": "b067eac4798a9b78b655aa0fe30960490215afbc1bbb25028f3a10796cce1137",
-    "src/exptech.js": "5ad7e117e1f5318bc3fa79330846d5c14b2484d259b75ecc9de96bab2ec5ce9c"
+    "src/exptech.js": "b707198549eeb0c20394701ed1bd48b3284723f5c14d6af3860b51da7e77f93d"
   },
-  "signature": "MNSERtOY8XELv3epX+guUA3Vjwagi3J5VABGMC2JW0AF5Dy0P7k+2ag01ZEnK33MMPDnuJGSItECOdRJToVRLjSdzzipc8kPdYPNZyywN+k5KQpw7zuPBcDncbSwHoztXbwNfdr/pLc7mswpIcmMgvNW0f38VqDLx/zxQga3TRpAg1EtUU56j2IVdHeXZjBIAiyP/1O67/wz9rnITd/CIOVgcboISGpQJKgRUYf/iDftr5T2w5dSNwvqEayzvXbKQUnUF5RF7HUNte/vqbCgQacQHSfhNDetQWiE5wCAGbftC9ewOBT5uBrH9Sg5SskYTft5NCS0jAzbGEM1xBIZjw==",
+  "signature": "yPFJf8htVR/vI+Aq35d7w25/JrSUiNIoC5M8hI4XjyNPfu2QOhSJinQh3XdteOl4wLk1seoan625ReM4HUFOZgd6a/wjfqKAgLaPSkI6FemdGe/mA2xy0d/+3XZe+mPlWUeyXeb4aS378vHN5TGXqQwwrWXFfDPEHZ74Ve4nOiIn8p3fbJpOzU0C2MzqG6adGKGyMGA1XHDiLNTBbn7yJR5aSjhR1damglgyzTeYrjOsXtc3Qx+G2qPmoswq2kAJ9PHJqY5sOyFuFqF3CMXIV7zLaJ8oc+jnXTfNFj0xU0b65+jQoH1G06vf2wOFOMua6TOMuEYvlrG9FIp/v7t1Ng==",
   "keyId": "official"
 }
