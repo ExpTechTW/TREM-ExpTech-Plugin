@@ -40,7 +40,6 @@ class ExpTech {
         this.key = ans;
         this.getconfig.user.token = this.key
         this.config.writeConfig(this.getconfig);
-        console.log(this.key);
       } else
         this.logger.error("Login http status code: ", res.status);
     } catch (error) {
