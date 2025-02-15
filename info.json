@@ -2,7 +2,8 @@
   "name": "exptech",
   "version": "1.0.5",
   "description": {
-    "zh_tw": "TREM-Lite ExpTech Plugin"
+    "zh_tw": "用來登入 ExpTech 服務的擴充",
+    "zh-Hant": "用來登入 ExpTech 服務的擴充"
   },
   "author": [
     "whes1015",
