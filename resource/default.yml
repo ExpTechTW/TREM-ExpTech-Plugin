@@ -1,7 +1,11 @@
-ver: 2
+ver: 5
 
 user:
-  token: null
-  email: null # 若使用 token 則不需要填寫
-  pass: null # 若使用 token 則不需要填寫
-  name: null # 若使用 token 則不需要填寫
+  token: null # 不需要填寫
+  email: null
+  pass: null
+
+login:
+  token: null # 不需要填寫
+  refresh_token: null # 不需要填寫
+  expires_at: null # 不需要填寫
